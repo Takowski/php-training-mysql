@@ -31,6 +31,7 @@
           <td><?php echo htmlspecialchars($hiking['distance']); ?></td>
           <td><?php echo htmlspecialchars($hiking['duration']); ?></td>
           <td><?php echo htmlspecialchars($hiking['height_difference']); ?></td>
+          <td><a href="update.php?id=<?php echo $hiking['id']; ?>">Update</a></td>
         </tr>
       <?php endforeach; ?>
     </table>
