@@ -20,7 +20,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	// SQL to update a record
 	$sql = "UPDATE hiking SET name = :name, difficulty = :difficulty, distance = :distance, duration = :duration, height_difference = :height_difference WHERE id = :id";
 
-	
 	// Prepare statement
 	$stmt = $bdd->prepare($sql);
 
